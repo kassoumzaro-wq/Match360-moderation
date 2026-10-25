@@ -1,0 +1,21 @@
+# Réglages du Worker Cloudflare (ce fichier ne contient AUCUN secret)
+
+# Mets ici le nom de ton Worker actuel pour le remplacer (garde la même adresse).
+name = "match360-worker"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+# Identifiant du projet Firebase (Console Firebase > Paramètres du projet).
+FIREBASE_PROJECT_ID = "REMPLACE_PAR_TON_PROJECT_ID"
+# Champ du document matches/{matchId} qui contient les 2 identifiants utilisateurs.
+PARTICIPANTS_FIELD = "users"
+
+# --- Retraits Mobile Money : PAS dans la première version ---
+WITHDRAWALS_ENABLED = "false"
+WITHDRAW_MIN_XOF = "1000"
+PAWAPAY_BASE_URL = "https://api.sandbox.pawapay.io"
+
+# À activer seulement quand les retraits seront ouverts :
+# [triggers]
+# crons = ["*/10 * * * *"]
