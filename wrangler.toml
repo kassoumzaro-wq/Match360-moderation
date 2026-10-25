@@ -7,7 +7,7 @@ compatibility_date = "2025-01-01"
 
 [vars]
 # Identifiant du projet Firebase (Console Firebase > Paramètres du projet).
-FIREBASE_PROJECT_ID = "REMPLACE_PAR_TON_PROJECT_ID"
+FIREBASE_PROJECT_ID = "match360-5b5bc"
 # Champ du document matches/{matchId} qui contient les 2 identifiants utilisateurs.
 PARTICIPANTS_FIELD = "users"
 
